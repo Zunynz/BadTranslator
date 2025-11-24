@@ -10,11 +10,11 @@ import java.util.Scanner;
 
 public class Translator {
     private static String SCRIPT_URL =
-            "https://script.google.com/URL"; // Enter the URL to script here
+            "https://script.google.com/macros/s/AKfycbzXhvKehTJvcvW7uSKpcnkwsYNNqL0Z2TJX3rapOKc7JqxNEhjUv_gePhOI9x8TKyoZ/exec"; // Write the URL to script here
     private static String SOURCE_LANG = "en"; // Write here the language code of the original text
 
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in);) {
+        try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Write your text: ");
             String text = scanner.nextLine();
 
@@ -35,10 +35,10 @@ public class Translator {
                     if (!lang.equalsIgnoreCase(prevLang)) {
                         try {
                             currentText = translate(prevLang, lang, currentText);
-                            System.out.println("Translated from " + prevLang + "to " + lang + ": " + currentText);
+                            System.out.println("Translated from " + prevLang + " to " + lang + ": " + currentText);
                             prevLang = lang;
                         } catch (IOException e) {
-                            System.out.println("[⚠️] Error in translation from" + prevLang + " to " + lang);
+                            System.out.println("[⚠️] Error in translation from " + prevLang + " to " + lang);
                         }
                     }
                 }
