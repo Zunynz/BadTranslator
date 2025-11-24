@@ -48,5 +48,5 @@ function doGet(e) {
 <img width="387" height="240" alt="изображение" src="https://github.com/user-attachments/assets/806ad73a-488a-4413-8668-f8d1b8c1791e" />
 
 6. Then you need to select "Execute as (your email)" and "Who has access" ― "Anyone".
-7. Click on "Deploy" and copy your "Web app url"
+7. Click on "Deploy" and copy your "Web app url".
 8. Copy and paste it into the "SCRIPT_URL" constant.
